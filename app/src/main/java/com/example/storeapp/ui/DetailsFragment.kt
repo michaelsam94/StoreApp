@@ -55,6 +55,7 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
             .into(binding.productImage)
         binding.productTitle.text = navArgs.product.title
         binding.productPrice.text = "${navArgs.product.price}$"
+        binding.productRating.text = "${navArgs.product.rating.rate}/5.0"
         binding.productDescription.text = navArgs.product.description
     }
 
